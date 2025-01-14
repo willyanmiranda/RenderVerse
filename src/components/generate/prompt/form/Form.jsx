@@ -6,6 +6,7 @@ import InputRange from './input-range/InputRange'
 import Button from './button/Button'
 import Plus from '../../../../assets/Plus.svg';
 import './Form.css'
+import FormField from '../../common/formField/FormField';
 
 const initialValues = {
     prompt: '',
@@ -76,52 +77,42 @@ const Form = () => {
 
     return (
         <form>
-            <div className='input-content'>
-                <label htmlFor="prompt">Prompt</label>
-                <input type="text" onChange={handleChange} value={state.prompt} name="prompt" id="prompt" placeholder='Digite o prompt...' />
+            
+            <FormField name="prompt" label="Prompt" handleChange={handleChange} value={state.prompt} type="text" placeholder='Digite o prompt...'/>
+
+            <div className='input-container'>
+                <FormField type="select" name="promptExample" handleChange={handlePromptValue} label="Exemplos de prompts">
+                    <option value="default">Selecione um prompt</option>
+                    <option value="animals">Animais</option>
+                    <option value="tatoo">Tatuagens</option>
+                    <option value="macro">Fotos detalhadas</option>
+                    <option value="pixel">Pixel art</option>
+                    <option value="cartoon">Cartoon</option>
+                    <option value="picture">Pintura</option>
+                </FormField>
             </div>
 
             <div className='input-container'>
-                <div className='input-content'>
-                    <label htmlFor="promptExample">Exemplos de prompts</label>
-                    <select onChange={handlePromptValue} name="promptExample" id="promptExample">
-                        <option value="default">Selecione um prompt</option>
-                        <option value="animals">Animais</option>
-                        <option value="tatoo">Tatuagens</option>
-                        <option value="macro">Fotos detalhadas</option>
-                        <option value="pixel">Pixel art</option>
-                        <option value="cartoon">Cartoon</option>
-                        <option value="picture">Pintura</option>
-                    </select>
-                </div>
-            </div>
+                <FormField type="select" name="imageStyle" handleChange={handleChange} value={state.imageStyle} label="Estilo da imagem">
+                    <option value="2560 x 1440">2560x1440</option>
+                    <option value="Photo">Foto</option>
+                    <option value="Cinematic">Cinema</option>
+                    <option value="Anime">Anime</option>
+                    <option value="3D Model">3D</option>
+                    <option value="(No style)">Sem modelo</option>
+                </FormField>
 
-            <div className='input-container'>
-                <div className='input-content'>
-                    <label htmlFor="imageStyle">Estilo da imagem</label>
-                    <select onChange={handleChange} value={state.imageStyle} name="imageStyle" id="imageStyle">
-                        <option value="2560 x 1440">2560x1440</option>
-                        <option value="Photo">Foto</option>
-                        <option value="Cinematic">Cinema</option>
-                        <option value="Anime">Anime</option>
-                        <option value="3D Model">3D</option>
-                        <option value="(No style)">Sem modelo</option>
-                    </select>
-                </div>
-
-                <div className='input-content' style={{ maxWidth: '200px'}}>
-                    <label htmlFor="promptNegative">Prompt negativo</label>
-                    <select onChange={handleChange} value={state.promptNegative} name="promptNegative" id="promptNegative">
-                        <option value={true}>Ativado</option>
-                        <option value={false}>Desativado</option>
-                    </select>
-                </div>
+                <FormField type="select" name="promptNegative" handleChange={handleChange} value={state.promptNegative} label="Prompt negativo">
+                    <option value={true}>Ativado</option>
+                    <option value={false}>Desativado</option>
+                </FormField>
             </div>
 
             <div className='input-container'>
                 <InputRange handleRange={handleChange} rangeValue={state.promptWidth} name="promptWidth" label="Largura"/>
                 <InputRange handleRange={handleChange} rangeValue={state.promptHeight} name="promptHeight" label="Altura"/>
             </div>
+
             <Button ref={buttonRef} handleClick={handleSubmit} name="Criar" img={Plus}/>
         </form>
     )
