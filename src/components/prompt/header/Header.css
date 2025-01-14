@@ -1,0 +1,34 @@
+.prompt-header {
+    width: 100%;
+    height: 45px;
+    max-width: 190px;
+    border: 2px solid #374151;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.prompt-header span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #374151;
+    font-size: 15px;
+}
+
+.prompt-header span.active {
+    color: white;
+    background-color: #242940;
+}
+
+.prompt-properties {
+    max-width: 120px;
+    border-radius: 12px 5px 5px 12px;
+}
+
+.prompt-info {
+    max-width: 70px;
+    border-radius: 5px 12px 12px 5px;
+}

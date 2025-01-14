@@ -1,0 +1,20 @@
+#root {
+  max-width: 1300px;
+  text-align: center;
+  width: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+.generator-container {
+  height: 100%;
+  padding-left: 70px;
+  display: flex;
+  gap: 70px;
+}
