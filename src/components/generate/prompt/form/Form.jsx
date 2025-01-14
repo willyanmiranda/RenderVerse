@@ -102,7 +102,7 @@ const Form = () => {
                     <option value="(No style)">Sem modelo</option>
                 </FormField>
 
-                <FormField type="select" name="promptNegative" handleChange={handleChange} value={state.promptNegative} label="Prompt negativo">
+                <FormField type="select" name="promptNegative" handleChange={handleChange} value={state.promptNegative} label="Prompt negativo" style={{ maxWidth: '200px'}}>
                     <option value={true}>Ativado</option>
                     <option value={false}>Desativado</option>
                 </FormField>

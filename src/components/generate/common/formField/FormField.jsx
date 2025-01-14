@@ -1,8 +1,8 @@
 import React from 'react'
 
-const FormField = ({ name, label, placeholder, type, handleChange, value, children }) => {
+const FormField = ({ name, label, placeholder, type, handleChange, value, style, children }) => {
     return (
-        <div className='input-content' >
+        <div className='input-content' style={style}>
             <label htmlFor={name}>{label}</label>
             {
                 type === "text" ?
