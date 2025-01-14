@@ -51,7 +51,7 @@ const Form = () => {
         e.preventDefault()
         dispatchPhotos(setLoader())
         buttonRef.current.disabled = true
-        const client = await Client.connect("mukaist/DALLE-4K");
+        const client = await Client.connect("mukaist/Midjourney");
         const result = await client.predict("/run", { 		
             prompt: state.prompt, 		
             negative_prompt: state.prompt, 		
