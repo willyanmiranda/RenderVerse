@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
-import illustration from '../../../assets/illustration.png';
-import spinner from '../../../assets/spinner.svg'
+import illustration from '../../../../assets/illustration.png';
+import spinner from '../../../../assets/spinner.svg'
 import Image from "../image/Image";
 import { useSelector } from 'react-redux';
 import './Slide.css'

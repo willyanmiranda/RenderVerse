@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { setPhotos, setLoader } from '../../../../features/photos/photos';
 import InputRange from './input-range/InputRange'
 import Button from './button/Button'
-import Plus from '../../../assets/Plus.svg';
+import Plus from '../../../../assets/Plus.svg';
 import './Form.css'
 
 const initialValues = {
