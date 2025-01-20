@@ -2,8 +2,8 @@ import { React, useReducer, useRef } from 'react'
 import { Client } from "@gradio/client";
 import { useDispatch } from 'react-redux';
 import { setPhotos, setLoader } from '../../../../features/photos/photos';
-import InputRange from './input-range/InputRange'
-import Button from './button/Button'
+import InputRange from '../../../common/input-range/InputRange'
+import Button from '../../../common/button/Button'
 import Plus from '../../../../assets/Plus.svg';
 import './Form.css'
 import FormField from '../../common/formField/FormField';

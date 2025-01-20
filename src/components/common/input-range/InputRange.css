@@ -1,0 +1,11 @@
+.input-range-value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: #242940;
+    border-radius: 4px;
+    padding: 0 5px;
+}

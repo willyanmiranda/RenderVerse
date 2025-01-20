@@ -1,4 +1,5 @@
 import React from 'react'
+import "./InputRange.css"
 
 const InputRange = props => {
   return (
