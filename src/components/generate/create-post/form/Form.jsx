@@ -23,11 +23,12 @@ const Form = () => {
 
       <div className='input-container'>
         <div className='input-content'>
-          <textarea name="description" id="description"></textarea>
+          <label htmlFor="description">Descrição</label>
+          <textarea name="description" id="description" placeholder='Foto muito legal...' />
         </div>
       </div>
 
-      <Button name="Criar" img={Plus} />
+      <Button name="Postar" img={Plus} />
     </form>
   )
 }

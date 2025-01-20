@@ -16,7 +16,7 @@
     -webkit-box-sizing: border-box;
 
     &::placeholder {
-        color: #fff;
+        color: #ffffff87;
     }
 }
 
@@ -28,10 +28,6 @@
     width: 100%;
     padding-left: 15px;
     cursor: pointer;
-
-    &::placeholder {
-        color: #fff;
-    }
 
     & option {
         cursor: pointer;
