@@ -7,10 +7,10 @@ import "./Form.css"
 const Form = () => {
   return (
     <form>
-      <FormField name="title" label="Title" type="text" placeholder='Coelho branquinho' />
+      <FormField name="title" label="Título" type="text" placeholder='Coelho branquinho' />
 
       <div className='input-container'>
-        <FormField type="select" name="tags" label="Tags">
+        <FormField type="select" name="category" label="Categoria">
           <option value="default">Selecione as tags</option>
           <option value="animals">Animais</option>
           <option value="tatoo">Tatuagens</option>
