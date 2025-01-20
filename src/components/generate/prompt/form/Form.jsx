@@ -6,7 +6,7 @@ import InputRange from '../../../common/input-range/InputRange'
 import Button from '../../../common/button/Button'
 import Plus from '../../../../assets/Plus.svg';
 import './Form.css'
-import FormField from '../../common/formField/FormField';
+import FormField from '../../../common/formField/FormField';
 
 const initialValues = {
     prompt: '',

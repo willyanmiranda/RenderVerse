@@ -1,0 +1,13 @@
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
